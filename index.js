@@ -17,7 +17,9 @@ JqueryFileUploadMiddleware.prototype.prepareOptions = function (options) {
         maxPostSize: 11000000000, // 11 GB
         minFileSize: 1,
         maxFileSize: 10000000000, // 10 GB
-        acceptFileTypes: /.+/i,
+        acceptFileTypes: ['appplication/pdf',
+                            'image/png'
+                          ],
         imageTypes: /\.(gif|jpe?g|png)$/i,
         imageVersions: {
 //            thumbnail: {
